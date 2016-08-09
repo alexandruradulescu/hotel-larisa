@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>World travel</title>
+	<!-- We use by default the OpenGraph meta tags for easy sharing of links over social media platforms. -->
+	<meta property="og:title" content="Wrlcome to World Travel">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://appstract.dk/">
+	<!-- Including mobile devices favicon and app icon for iOS, Android and Windows -->
+	<link rel="apple-touch-icon" sizes="57x57" href="css/images/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="css/images/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="css/images/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="css/images/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="css/images/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="css/images/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="css/images/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="css/images/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="css/images/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="css/images/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="css/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="css/images/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="css/images/favicon-16x16.png">
+	<link rel="manifest" href="css/images/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="css/images/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="icon" type="image/png" href="/favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href="css/global.css" type="text/css" rel="stylesheet">
+	<link href="css/header-footer.css" type="text/css" rel="stylesheet">
+	<link href="css/destinations.css" type="text/css" rel="stylesheet">
+	<link href="css/form.css" type="text/css" rel="stylesheet">
+	<link href="css/editor-content.css" type="text/css" rel="stylesheet">
+	<link href="css/accordion.css" type="text/css" rel="stylesheet">
+	<link href="css/print.css" type="text/css" rel="stylesheet" media="print">
+	<script src="scripts/underscore.js"></script>
+	<script src="scripts/as.js"></script>
+	<script src="scripts/jquery-1.10.2.min.js"></script>
+	<script src="scripts/utils.js"></script>
+	<script src="scripts/accordion.js"></script>
+	<script src="scripts/main.js"></script>
+	
+	<!-- 
+		Fallback for IE 9 to recognise the HTML5 elements.
+		Each of these elements must have { display:block; } declared also in the css 
+	-->
+	<!--[if lte IE 9]>
+	<script type="text/javascript">
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('main');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('figure');
+		document.createElement('figcaption');
+		document.createElement('time');
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header" role="banner">
+		<div class="box-wide clearfix">
+			<a class="logo-box" href="index.html">
+				<img class="logo" src="css/images/logo.png" alt="WT - World travel"/>
+			</a>
+			<div class="mobile-menu-toggle" tabindex="0">
+				<span class="mobile-menu-line"></span>
+			</div>
+			<div class="navigation-background"></div>
+			<div class="navigation-wrapper" role="navigation">
+				<nav class="global-navigation">
+					<a class="global-navigation-item" href="#">Luna</a>
+					<a class="global-navigation-item" href="#">Mars</a>
+					<a class="global-navigation-item" href="#">Venus</a>
+					<a class="global-navigation-item active" href="#">Jupiter</a>
+					<a class="global-navigation-item" href="#">Europa</a>
+					<a class="global-navigation-item" href="#">Saturn</a>
+				</nav>
+				<nav class="secondary-navigation" role="navigation">
+					<a class="secondary-navigation-item" href="#">About us</a>
+					<a class="secondary-navigation-item" href="#">Contact</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main class="main-wrapper" role="main"> <!-- We include everything except the header and footer in main this time as we want to have the footer always at the bottom, peoperly. -->
+		<section class="section" role="region"> <!-- Each major block is encapsulated within a section. -->
+			<div class="box-wide">
+				<h2 class="main-heading align-left">Anywhere you might choose</h2>
+				<p class="secondary-heading align-left">We're still in the solar system which is a tiny space compared to the galaxy and all the rest</p>
+				<div class="article-wrapper">
+					<!-- .editor-content is the class we use for rich text wrappers. The text written by the client in the back-office gets outputed as raw within the .editor-content block. This is the only case where in the css we don't target solely by class, but also by DOM element. Check editor-content.css for more details -->
+					<article class="editor-content article-content" role="article">
+						<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+						<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+						<ul>
+							<li>Nor again is there anyone who loves or pursues or desires to obtain pain of itself</li>
+							<li>Because it is pain</li>
+							<li>But because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</li>
+						</ul>
+						<img src="css/images/solar-system.jpg" alt="The position of our solar system in the galaxy"/>
+						<p>To take a<strong> trivial example</strong>, which of us ever undertakes laborious physical exercise, except to obtain <em>some advantage from it? </em></p>
+						<ol>
+							<li>But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences</li>
+							<li>Or one who avoids a pain that produces no resultant pleasure</li>
+						</ol>
+						<p style="text-align: center;">On the other hand(this text is centered), <a href="#">we denounce with righteous indignation(a link)</a> and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.</p>
+						<p style="text-align: right;">These cases(this text is right-aligned) are perfectly simple and easy to distinguish.</p>
+					</article>
+					<div class="faq-list">
+						<div class="accordion">
+							<p class="accordion-headline" tabindex="0">First question</p>
+							<div class="accordion-content">
+								<div class="accordion-inner">
+									<div class="editor-content">
+										<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+										<ul>
+											<li>Nor again is there anyone who loves or pursues or desires to obtain pain of itself</li>
+											<li>Because it is pain</li>
+											<li>But because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion">
+							<p class="accordion-headline" tabindex="0">Second question</p>
+							<div class="accordion-content">
+								<div class="accordion-inner">
+									<div class="editor-content">
+										<p>To take a<strong> trivial example</strong>, which of us ever undertakes laborious physical exercise, except to obtain <em>some advantage from it?</em></p>
+										<ol>
+											<li>But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences</li>
+											<li>Or one who avoids a pain that produces no resultant pleasure</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<aside class="sidebar" role="complementary">
+						<p class="secondary-heading">Facts</p>
+						<div class="fact-list">
+							<div class="fact">
+								<p class="fact-headline">The hottest planet isn’t closest to the sun</p>
+								<p class="fact-text">For practical consideration, Mercury has no atmosphere, no warming blanket to help it maintain the sun’s heat. Venus, on the other hand, is shrouded by an unexpectedly thick atmosphere, about 100 times thicker than our own on Earth.</p>
+							</div>
+							<div class="fact">
+								<p class="fact-headline">Pluto is smaller than the USA.</p>
+								<p class="fact-text">The greatest distance across the contiguous United States is nearly 2,900 miles (from Northern California to Maine). By the best current estimates, Pluto is just over 1400 miles across, less than half the width of the U.S.</p>
+							</div>
+							<div class="fact">
+								<p class="fact-headline">The edge of the solar system is 1,000 times farther away than Pluto</p>
+								<p class="fact-text">The Kuiper Belt, the first of the sun’s two reservoirs of cometary material, is thought to extend to 50 or 60 astronomical units (AU, or the average distance of the Earth from the sun). An even farther part of the solar system, the huge but tenuous Oort comet cloud, may extend to 50,000 AU from the sun, or about half a light year – more than a thousand times farther than Pluto.</p>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer" role="contentinfo">
+		<div class="box-wide clearfix">
+			<div class="box-half footer-contect-menu">
+				<div class="footer-contact-item">
+					<a href="tel:004512345678" class="footer-contact-item-link">+45 123 456 78</a>
+				</div>
+				<div class="footer-contact-item">
+					<a href="https://www.google.dk/maps/place/appstract+consulting/@55.6846493,12.5838984,17z/data=!3m1!4b1!4m2!3m1!1s0x46525318e0724d83:0xfd15de8c5e123e9f?hl=en" target="_blank" class="footer-contact-item-link">Borgergade 24B, 2.sal, Kobenhavns K, 1300</a>
+				</div>
+			</div>
+			<div class="box-half footer-navigation-menu">
+				<div class="footer-navigation-item">
+					<a href="#" class="footer-navigation-item-link">About us</a>
+				</div>
+				<div class="footer-navigation-item">
+					<a href="#" class="footer-navigation-item-link">Contact</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

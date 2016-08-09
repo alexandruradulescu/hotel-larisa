@@ -1,0 +1,38 @@
+.main-heading { font-size:3.2rem; color:#414141; font-weight:500; line-height:1.4; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; margin:.8rem 0 3.2rem; text-align:center; }
+.secondary-heading { font-size:2.2rem; color:#414141; line-height:1.4; margin:.8rem 0 3.6rem; text-align:center; }
+.main-heading + .secondary-heading { margin-top:-2.4rem; }
+.main-heading.align-left,
+.secondary-heading.align-left { text-align:left; }
+
+.destination { display:block; padding-top:100%; position:relative; background-repeat:no-repeat; background-size:cover; margin-bottom:2rem; box-shadow:0 .2rem .5rem 0 rgba(0,0,0,0.16),0 .2rem 1rem 0 rgba(0,0,0,0.12); }
+	.destination-heading { position:absolute; font-size:3.2rem; padding:1.2rem; width:100%; background-color:rgba(255, 255, 255, .5); color:#414141; box-sizing:border-box; text-align:center; top:50%; transform:translateY(-50%); transition:background-colo .3s, color .3s; }
+	.destination:hover .destination-heading,
+	.destination:focus .destination-heading { background-color:rgba(0, 0, 0, .5); color:#e5e5e5; }
+
+.destination-luna { background-image:url(images/moon.jpg); }
+.destination-mars { background-image:url(images/mars.jpg); }
+.destination-jupiter { background-image:url(images/jupiter.jpg); }
+.destination-europa { background-image:url(images/europa.png); }
+.destination-venus { background-image:url(images/venus.jpg); }
+.destination-saturn { background-image:url(images/saturn.jpg); }
+
+@media all and (max-width:768px) {
+	.destination { padding-top:56.25%; }
+}
+
+.article-wrapper { position:relative; padding-right:35rem; margin-top:5.6rem; }
+	.article-content { margin-bottom:4rem; padding-bottom:6rem; border-bottom:.1rem solid #ddd; }
+	.sidebar { position:absolute; top:0; right:0; width:30rem; background-color:#f4f4f4; padding:.8rem; }
+@media all and (max-width:1024px) {
+	.article-wrapper { padding-right:30rem; }
+		.sidebar { width:25rem; }
+}
+@media all and (max-width:767px) {
+	.article-wrapper { padding-right:0; }
+		.sidebar { position:relative; width:auto; }
+}
+
+.fact { padding:0 .8rem; margin-bottom:3.2rem; }
+.fact:last-child { margin-bottom:1.6rem; }
+	.fact-headline { font-size:1.6rem; font-weight:bold; line-height:1.2; margin-bottom:.8rem; }
+	.fact-text { font-size:1.4rem; line-height:1.2; margin-bottom:.4rem; }

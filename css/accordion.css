@@ -1,0 +1,10 @@
+/* Accordion */
+.accordion { background-color:#f9f9f9; padding:0 2rem; border-top:.1rem solid #ddd; border-left:.1rem solid #ddd; border-right:.1rem solid #ddd; }
+.accordion:first-child { border-top-left-radius:.3rem; border-top-right-radius:.3rem; }
+.accordion:last-child { border-bottom-left-radius:.3rem; border-bottom-right-radius:.3rem; margin-bottom:3rem; border-bottom:.1rem solid #ddd; }
+	.accordion-headline { font-size:2.2rem; line-height:1.2; padding:2rem 0; cursor:pointer; position:relative; box-sizing:border-box; }
+	.accordion-headline:focus { outline:2px solid #000; }
+		.accordion-headline:after { content:""; display:block; width:1.2rem; height:1.2rem; position:absolute; top:2.2rem; right:1rem; border-bottom:.2rem solid #000; border-right:.2rem solid #000; transform:rotate(45deg); transform-origin:75% 75%; transition:transform .3s;	 }
+		.accordion.active .accordion-headline:after { transform:rotate(225deg); }
+	.accordion-content { max-height:0; overflow:hidden; -webkit-transition:max-height .25s ; -moz-transition:max-height .25s ; -o-transition:max-height .25s ; -ms-transition:max-height .25s ; transition:max-height .25s ; }
+		.accordion-inner { overflow:hidden; }

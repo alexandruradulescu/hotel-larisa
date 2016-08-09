@@ -1,0 +1,62 @@
+﻿/*css reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}strong{font-weight:bold; }i{font-style:italic; }a{text-decoration:none; }
+
+/*We set the font-size to 62.5% so that it reduces from 16 px by default to 10 px in all browsers. Now 1rem=10px so it is very easy to calculate rems by default, no need for a calculator*/
+html { height:100%; font-size:10px; }
+body { height:100%; font-family:"Roboto", Arial, sans-serif; background-color:#fff; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; -webkit-overflow-scrolling:touch; }
+input::-ms-clear { display:none; } /* Removing the "clear" that IE ads automatically in the input fields */
+
+/* site anchors */
+a { color:inherit; }
+a:link, a:visited, a:hover, a:active { text-decoration:none; }
+a:focus, button:focus, input:focus, textarea:focus { outline:2px solid #000; } /* WCAG - actionable elements having a clear and visible outline when focused. */
+
+.clear { clear:both; }
+.clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; }
+
+
+.box-wide { width:92%; margin:auto; min-width:80rem; }
+
+/*------------------- Simple Grid ------------------------*/
+.box-full { width:100%; float:left; -moz-box-sizing:border-box; box-sizing:border-box; }
+.box-half { width:50%; float:left; -moz-box-sizing:border-box; box-sizing:border-box; }
+.box-third { width:33.333%; float:left; -moz-box-sizing:border-box; box-sizing:border-box; }
+.box-two-thirds { width:66.66%; float:left; -moz-box-sizing:border-box; box-sizing:border-box; }
+.box-quarter { width:25%; float:left; -moz-box-sizing:border-box; box-sizing:border-box; }
+.box-three-quarters { width:75%; float:left; -moz-box-sizing:border-box; box-sizing:border-box; }
+.column-grid { width:104.082%; margin-left:-2.041%; }
+	.column-grid > .box-quarter { width:20.918%; margin-left:2.041%; margin-right:2.041%; }
+	.column-grid > .box-third { width:29.251%; margin-left:2.041%; margin-right:2.041%; }
+	.column-grid > .box-two-thirds { width:62.584%; margin-left:2.041%; margin-right:2.041%; }
+	.column-grid > .box-full { width:95.918%; margin-left:2.041%; margin-right:2.041%; }
+	.column-grid > .box-half { width:45.918%; margin-left:2.041%; margin-right:2.041%; position:relative; }
+	.column-grid > .box-three-quarters { width:70.918%; margin-left:2.041%; margin-right:2.041%; }
+	.column-grid > .box-two-thirds > .box-full > .box-half { width:48.3%; margin-left:1.7%; }
+	.column-grid > .box-two-thirds > .box-full > .box-half:first-child { margin-left:0; margin-right:1.7%; }
+
+@media all and (min-width: 1200px) {
+	.box-wide { width:77%; }
+}
+@media all and (max-width:850px) {
+	.box-wide { min-width:auto; }
+}
+@media all and (max-width:768px) {
+	.column-grid > .box-third,
+	.column-grid > .box-quarter { width:45.918%; }
+	.column-grid > .box-two-thirds,
+	.column-grid > .box-three-quarters { width:95.918%; }
+}
+@media all and (max-width:540px) {
+	.column-grid > .box-third,
+	.column-grid > .box-quarter,
+	.column-grid > .box-half  { width:95.918%; }
+}
+
+/* --------------------------- General rules --------------------------*/
+.main-wrapper { min-height:calc(100% - 7.8rem); }
+.section { margin:3.6rem 0; position:relative; }
+.section.connect-up { margin-top:0; }
+.section.connect-bottom { margin-bottom:0; }
+	
+
+

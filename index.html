@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hotel Larisa</title>
+	<!-- We use by default the OpenGraph meta tags for easy sharing of links over social media platforms. -->
+	<meta property="og:title" content="Hotel Larisa">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://appstract.dk/">
+	<!-- Including mobile devices favicon and app icon for iOS, Android and Windows. One quick tool is http://www.favicon-generator.org/-->
+	<link rel="apple-touch-icon" sizes="57x57" href="css/images/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="css/images/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="css/images/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="css/images/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="css/images/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="css/images/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="css/images/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="css/images/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="css/images/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="css/images/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="css/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="css/images/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="css/images/favicon-16x16.png">
+	<link rel="manifest" href="css/images/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="css/images/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="icon" type="image/png" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500,700|Julius+Sans+One|Roboto:300,400,500" rel="stylesheet">	<link href="css/global.css" type="text/css" rel="stylesheet">
+	<link href="css/header-footer.css" type="text/css" rel="stylesheet">
+	<link href="css/destinations.css" type="text/css" rel="stylesheet">
+	<link href="css/form.css" type="text/css" rel="stylesheet">
+	<link href="css/editor-content.css" type="text/css" rel="stylesheet">
+	<link href="css/accordion.css" type="text/css" rel="stylesheet">
+	<link href="css/hero.css" type="text/css" rel="stylesheet">
+	<link href="css/rooms.css" type="text/css" rel="stylesheet">
+	<link href="css/print.css" type="text/css" rel="stylesheet" media="print">
+	<script src="scripts/underscore.js"></script>
+	<script src="scripts/as.js"></script>
+	<script src="scripts/jquery-1.10.2.min.js"></script>
+	<script src="scripts/utils.js"></script>
+	<script src="scripts/accordion.js"></script>
+	<script src="scripts/main.js"></script>
+	
+	<!-- 
+		Fallback for IE 9 to recognise the HTML5 elements.
+		Each of these elements must have { display:block; } declared also in the css 
+	-->
+	<!--[if lte IE 9]>
+	<script type="text/javascript">
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('main');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('figure');
+		document.createElement('figcaption');
+		document.createElement('time');
+	</script>
+	<![endif]-->
+</head>
+<body>
+	
+	<header class="header" role="banner">
+		<div class="box-wide clearfix">
+			<a class="logo-box" href="#">
+				<h1 class="logo-text">Hotel Larisa</h1>
+			</a>
+			<div class="mobile-menu-toggle" tabindex="0">
+				<span class="mobile-menu-line"></span>
+			</div>
+			<div class="navigation-background"></div>
+			<div class="navigation-wrapper">
+				<nav class="global-navigation" role="navigation">
+					<a class="global-navigation-item" href="destination.html">Camere</a>
+					<a class="global-navigation-item" href="destination.html">Oferte</a>
+					<a class="global-navigation-item" href="destination.html">Servicii</a>
+					<a class="global-navigation-item" href="destination.html">Contact</a>
+					<a class="global-navigation-item grab-attention" href="destination.html">Rezerva</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<section class="section connect-up">
+		<figure class="hero" style="background-image:url(http://files.cazare-larisa.com/200000242-e2350e32ac-public/12822103_559088024254633_280506344_n.jpg)">
+			<div class="hero-overlay"></div>
+			<div class="hero-left-box">
+				<h2 class="main-heading">Welcome to Hotel Larisa</h2>
+			</div>
+			<div class="hero-right-box">
+				<p class="hero-text">
+					Welcoming rooms
+					<small class="hero-small-text">from 100 ron/night</small>
+				</p>
+				<a href="button" class="#">Book now</a>
+			</div>
+		</figure>
+	</section>
+
+	<section class="section">
+		<div class="box-wide">
+			<h2 class="main-heading">Rooms</h2>
+			<div class="column-grid clearfix"> 
+				<a class="box-third room">
+					<figure class="room-figure" style="background-image:url(http://files.cazare-larisa.com/200000242-e2350e32ac-public/12822103_559088024254633_280506344_n.jpg)">
+					</figure>
+					<h3 class="room-name">{{Room name}}</h3>
+					<p class="room-info">{{room info and details, or maybe an explaination}}</p>
+				</a>
+				<a class="box-third room">
+					<figure class="room-figure" style="background-image:url(http://files.cazare-larisa.com/200000245-d213ad3087-public/20160505_105639.jpg)">
+					</figure>
+					<h3 class="room-name">{{Room name}}</h3>
+					<p class="room-info">{{room info and details, or maybe an explaination}}</p>
+				</a>
+				<a class="box-third room">
+					<figure class="room-figure" style="background-image:url(http://files.cazare-larisa.com/200000249-367d53777e-public/12834751_559087990921303_654964154_n.jpg)">
+					</figure>
+					<h3 class="room-name">{{Room name}}</h3>
+					<p class="room-info">{{room info and details, or maybe an explaination}}</p>
+				</a>					
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="box-wide">
+			<h2 class="main-heading">Get in touch with us</h2>
+			<p class="secondary-heading">If you have any questions, just let us know. We'll reply within 24 hours, except for special holidays.</p>
+			<form class="column-grid clearfix" role="form">
+				<label class="form-item mandatory-field box-half">
+					<span class="input-label">Your full name</span>
+					<!-- aria-required="true/false" is needed for accessibility purposes. Especially if a field is mandatory we need to have it set up to true -->
+					<input class="input-field" type="text" aria-required="true"/>
+				</label>
+				<label class="form-item mandatory-field box-half">
+					<span class="input-label">Your email address</span>
+					<input class="input-field" type="email" aria-required="true"/>
+				</label>
+				<label class="form-item mandatory-field box-full">
+					<span class="input-label">Your message</span>
+					<textarea class="textarea-field" aria-required="true"></textarea>
+				</label>
+				<div class="form-item box-full send-message-button-wrapper">
+					<button type="submit" class="button">Send message</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer" role="contentinfo">
+		<div class="box-wide clearfix">
+			<div class="box-half footer-contect-menu">
+				<div class="footer-contact-item">
+					<a href="tel:004512345678" class="footer-contact-item-link">+45 123 456 78</a>
+				</div>
+				<div class="footer-contact-item">
+					<a href="https://www.google.dk/maps/place/appstract+consulting/@55.6846493,12.5838984,17z/data=!3m1!4b1!4m2!3m1!1s0x46525318e0724d83:0xfd15de8c5e123e9f?hl=en" target="_blank" class="footer-contact-item-link">Borgergade 24B, 2.sal, Kobenhavns K, 1300</a>
+				</div>
+			</div>
+			<div class="box-half footer-navigation-menu">
+				<div class="footer-navigation-item">
+					<a href="#" class="footer-navigation-item-link">About us</a>
+				</div>
+				<div class="footer-navigation-item">
+					<a href="#" class="footer-navigation-item-link">Contact</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

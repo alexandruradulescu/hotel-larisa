@@ -1,0 +1,8 @@
+﻿body { -webkit-print-color-adjust:exact; }
+.header, .footer { display:none !important; }
+
+.accordion { page-break-inside:avoid; background-color:#fff; }
+	.accordion-content { max-height:initial; }
+.sidebar { background-color:#fff; }
+
+.editor-content a { color:#000; }

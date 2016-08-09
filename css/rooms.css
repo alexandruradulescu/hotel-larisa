@@ -1,0 +1,4 @@
+.room { cursor:pointer; }
+.room-figure { width:100%; padding-top:100%; position:relative; overflow:hidden; margin-bottom:.6rem; background-size:cover; background-position:50% 50%; background-repeat:none; }
+.room-name { font-size:2.4rem; line-height:1.4; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; margin:.6rem; }
+.room-info { font-size:1.4rem; line-height:1.4; color:#ccc; margin:.6rem; }
