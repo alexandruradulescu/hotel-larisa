@@ -10,26 +10,16 @@
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://appstract.dk/">
 	<!-- Including mobile devices favicon and app icon for iOS, Android and Windows. One quick tool is http://www.favicon-generator.org/-->
-	<link rel="apple-touch-icon" sizes="57x57" href="css/images/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="css/images/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="css/images/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="css/images/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="css/images/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="css/images/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="css/images/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="css/images/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="css/images/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="css/images/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="css/images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="css/images/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="css/images/favicon-16x16.png">
-	<link rel="manifest" href="css/images/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="css/images/ms-icon-144x144.png">
+	
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
 
 	<link rel="icon" type="image/png" href="/favicon.ico">
-<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500,700|Julius+Sans+One|Roboto:300,400,500" rel="stylesheet">	<link href="css/global.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500,700|Julius+Sans+One|Roboto:300,400,500" rel="stylesheet">	<link href="css/global.css" type="text/css" rel="stylesheet">
 	<link href="css/header-footer.css" type="text/css" rel="stylesheet">
 	<link href="css/destinations.css" type="text/css" rel="stylesheet">
 	<link href="css/form.css" type="text/css" rel="stylesheet">
@@ -81,7 +71,7 @@
 					<a class="global-navigation-item" href="destination.html">Oferte</a>
 					<a class="global-navigation-item" href="destination.html">Servicii</a>
 					<a class="global-navigation-item" href="destination.html">Contact</a>
-					<a class="global-navigation-item grab-attention" href="destination.html">Rezerva</a>
+					<a class="global-navigation-item grab-attention" href="destination.html">Rezervari</a>
 				</nav>
 			</div>
 		</div>
@@ -90,15 +80,17 @@
 	<section class="section connect-up">
 		<figure class="hero" style="background-image:url(http://files.cazare-larisa.com/200000242-e2350e32ac-public/12822103_559088024254633_280506344_n.jpg)">
 			<div class="hero-overlay"></div>
-			<div class="hero-left-box">
-				<h2 class="main-heading">Welcome to Hotel Larisa</h2>
-			</div>
-			<div class="hero-right-box">
-				<p class="hero-text">
-					Welcoming rooms
-					<small class="hero-small-text">from 100 ron/night</small>
-				</p>
-				<a href="button" class="#">Book now</a>
+			<div class="box-wide hero-box-container clearfix">
+				<div class="hero-left-box box-half">
+					<h2 class="main-heading">Welcome to Hotel Larisa</h2>
+				</div>
+				<div class="hero-right-box box-half">
+					<p class="hero-text">
+						Welcoming rooms
+						<small class="hero-small-text">from 100 ron/night</small>
+					</p>
+					<a href="#" class="button is-inline golden is-large">Book now</a>
+				</div>
 			</div>
 		</figure>
 	</section>
@@ -128,25 +120,77 @@
 			</div>
 		</div>
 	</section>
+
 	<section class="section">
 		<div class="box-wide">
+			<h2 class="main-heading">Servicii</h2>
+			<div class="column-grid clearfix"> 
+				<div class="box-quarter service">
+					<img class="service-image" src="css/images/guest.png" role="presentation"/>
+					<h3 class="service-title">Service name</h3>
+					<p class="service-text">What it means more exactly and how you could get it etc etc</p>
+				</div>
+				<div class="box-quarter service">
+					<img class="service-image" src="css/images/guest.png" role="presentation"/>
+					<h3 class="service-title">Service name</h3>
+					<p class="service-text">What it means more exactly and how you could get it etc etc</p>
+				</div>
+				<div class="box-quarter service">
+					<img class="service-image" src="css/images/guest.png" role="presentation"/>
+					<h3 class="service-title">Service name</h3>
+					<p class="service-text">What it means more exactly and how you could get it etc etc</p>
+				</div>
+				<div class="box-quarter service">
+					<img class="service-image" src="css/images/guest.png" role="presentation"/>
+					<h3 class="service-title">Service name</h3>
+					<p class="service-text">What it means more exactly and how you could get it etc etc</p>
+				</div>
+				<div class="box-quarter service">
+					<img class="service-image" src="css/images/guest.png" role="presentation"/>
+					<h3 class="service-title">Service name</h3>
+					<p class="service-text">What it means more exactly and how you could get it etc etc</p>
+				</div>
+				<div class="box-quarter service">
+					<img class="service-image" src="css/images/guest.png" role="presentation"/>
+					<h3 class="service-title">Service name</h3>
+					<p class="service-text">What it means more exactly and how you could get it etc etc</p>
+				</div>
+				<div class="box-quarter service">
+					<img class="service-image" src="css/images/guest.png" role="presentation"/>
+					<h3 class="service-title">Service name</h3>
+					<p class="service-text">What it means more exactly and how you could get it etc etc</p>
+				</div>
+				<div class="box-quarter service">
+					<img class="service-image" src="css/images/guest.png" role="presentation"/>
+					<h3 class="service-title">Service name</h3>
+					<p class="service-text">What it means more exactly and how you could get it etc etc</p>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="box-narrow">
 			<h2 class="main-heading">Get in touch with us</h2>
 			<p class="secondary-heading">If you have any questions, just let us know. We'll reply within 24 hours, except for special holidays.</p>
-			<form class="column-grid clearfix" role="form">
-				<label class="form-item mandatory-field box-half">
+		</div>
+		<div class="box-tiny">
+			<form class="form" role="form">
+				<label class="form-item mandatory-field">
 					<span class="input-label">Your full name</span>
 					<!-- aria-required="true/false" is needed for accessibility purposes. Especially if a field is mandatory we need to have it set up to true -->
 					<input class="input-field" type="text" aria-required="true"/>
 				</label>
-				<label class="form-item mandatory-field box-half">
+				<label class="form-item mandatory-field">
 					<span class="input-label">Your email address</span>
 					<input class="input-field" type="email" aria-required="true"/>
 				</label>
-				<label class="form-item mandatory-field box-full">
+				<label class="form-item mandatory-field">
 					<span class="input-label">Your message</span>
 					<textarea class="textarea-field" aria-required="true"></textarea>
 				</label>
-				<div class="form-item box-full send-message-button-wrapper">
+				<div class="form-item send-message-button-wrapper">
 					<button type="submit" class="button">Send message</button>
 				</div>
 			</form>
@@ -155,11 +199,15 @@
 
 	<footer class="footer" role="contentinfo">
 		<div class="box-wide clearfix">
-			<div class="box-half footer-contect-menu">
-				<div class="footer-contact-item">
+			<div class="box-half footer-menu">
+				<h2 class="main-heading">Contact</h2>
+				<a class="logo-box" href="#">
+					<h1 class="logo-text">Hotel Larisa</h1>
+				</a>
+				<div class="footer-menu-item">
 					<a href="tel:004512345678" class="footer-contact-item-link">+45 123 456 78</a>
 				</div>
-				<div class="footer-contact-item">
+				<div class="footer-menu-item">
 					<a href="https://www.google.dk/maps/place/appstract+consulting/@55.6846493,12.5838984,17z/data=!3m1!4b1!4m2!3m1!1s0x46525318e0724d83:0xfd15de8c5e123e9f?hl=en" target="_blank" class="footer-contact-item-link">Borgergade 24B, 2.sal, Kobenhavns K, 1300</a>
 				</div>
 			</div>

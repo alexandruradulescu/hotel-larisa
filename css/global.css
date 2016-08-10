@@ -16,6 +16,8 @@ a:focus, button:focus, input:focus, textarea:focus { outline:2px solid #000; } /
 
 
 .box-wide { width:92%; margin:auto; min-width:80rem; }
+.box-narrow { width:66%; margin:auto; min-width:60rem; }
+.box-tiny { width:33%; margin:auto; min-width:30rem; }
 
 /*------------------- Simple Grid ------------------------*/
 .box-full { width:100%; float:left; -moz-box-sizing:border-box; box-sizing:border-box; }
@@ -50,6 +52,8 @@ a:focus, button:focus, input:focus, textarea:focus { outline:2px solid #000; } /
 	.column-grid > .box-third,
 	.column-grid > .box-quarter,
 	.column-grid > .box-half  { width:95.918%; }
+	
+	.box-narrow { width:90%; min-width:initial; }
 }
 
 /* --------------------------- General rules --------------------------*/

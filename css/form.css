@@ -13,5 +13,8 @@
 	.button:hover,
 	.button:focus { background-color:#136E47; }
 	.button-transparent { background-color:transparent; color:#268c60; padding-left:1.428em; font-weight:bold; }
-	.button-large { font-weight:600; padding:1em; font-size:1.6em; }
-	.button-inline { display:inline-block; margin-right:.714em; }
+	.button.is-large { font-weight:500; padding:1em; font-size:1.6em; }
+	.button.is-inline { display:inline-block; }
+
+	.button.golden { background-color:#FFA000; color:#000; transition:background-color .2s; }
+	.button.golden:hover { background-color:#FF8F00; }

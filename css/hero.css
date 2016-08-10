@@ -1,9 +1,21 @@
-.hero { width:100%; padding-top:62.5%; position:relative; overflow:hidden; background-size:cover; background-position:50% 50%; background-repeat:none; }
+.hero { width:100%; padding-top:41.5%; position:relative; overflow:hidden; background-size:cover; background-position:50% 50%; background-repeat:none; }
     .hero-overlay { position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0, 0, 0, .3); }
+    .hero-box-container { position:absolute; top:0; left:0; right:0; height:100%; margin:auto; }
     .hero-left-box,
-    .hero-right-box { position:absolute; top:50%; transform:translateY(-50%); }
-    .hero-left-box { left:20rem; width:calc(50% - 20rem); }
-    .hero-right-box { right:20rem; width:calc(50% - 20rem); text-align:right; }
+    .hero-right-box { position:relative; top:50%; transform:translateY(-50%); }
+    .hero-right-box { text-align:right; }
         .hero .main-heading { color:#fff; text-align:left; }
-        .hero-text { color:#fff; font-size:1.8rem; line-height:3.2rem;  font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; }
+        .hero-text { color:#fff; font-size:2.6rem; line-height:3.2rem; margin-bottom:1.6rem; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; }
             .hero-small-text { font-size:1.4rem; display:block;  font-family:'Roboto', helvetica, arial, sans-serif; }
+
+@media all and (max-width:768px) {
+    .hero { padding-top:62.5%; }
+}
+
+/*===========================
+========= Services
+============================*/
+.service { margin-bottom:4rem; }
+    .service-image { display:block; max-width:100%; margin:auto; }
+    .service-title { font-size:2.4rem; line-height:1.4; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; margin:1.6rem 0 .8rem; text-align:center; color:#E65100; }
+    .service-text { font-size:1.4rem; line-height:1.4; color:#969696; text-align:center; }
