@@ -8,6 +8,13 @@
 	.textarea-field { line-height:1.2; height:5em; resize:none; }
 	.checkbox-field { display:block; float:left;  }
 	.checkbox-field + .input-label { display:block; position:relative; top:.3em; }
+	.error-message { margin-top:.4rem; font-size:1.2rem; color:#c62828; display:none; }
+	.input-field:valid,
+	.textarea-field:valid { border-color:#388E3C; }
+	.input-field:invalid,
+	.textarea-field:invalid { border-color:#c62828; }
+	.input-field:invalid ~ .error-message,
+	.textarea-field:invalid ~ .error-message { display:block; }
 
 	.button { font-size:1.4em; display:block;  padding:1em .714em; line-height:1.2; position:relative; color:#fff; background-color:#268c60; border:none; border-radius:.2em; cursor:pointer; box-sizing:border-box; -webkit-transition:background-color .25s; -moz-transition:background-color .25s; transition:background-color .25s; }
 	.button:hover,

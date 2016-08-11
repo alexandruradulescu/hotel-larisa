@@ -172,51 +172,59 @@
 
 	<section class="section">
 		<div class="box-narrow">
-			<h2 class="main-heading">Get in touch with us</h2>
-			<p class="secondary-heading">If you have any questions, just let us know. We'll reply within 24 hours, except for special holidays.</p>
+			<h2 class="main-heading">Rezervati sau contactati-ne</h2>
+			<p class="secondary-heading">Doriti sa faceti o rezervare sau aveti intrebari pentru noi? Va rugam sa completati formularul de mai jos si va vom raspunde in maxim 24 de ore. Daca este ceva urgent, ne puteti suna direct la numarul <a class="phone-number" href="tel:0040712345678">(004) 0712 345 678</a></p>
 		</div>
 		<div class="box-tiny">
 			<form class="form" role="form">
 				<label class="form-item mandatory-field">
-					<span class="input-label">Your full name</span>
-					<!-- aria-required="true/false" is needed for accessibility purposes. Especially if a field is mandatory we need to have it set up to true -->
-					<input class="input-field" type="text" aria-required="true"/>
+					<span class="input-label">Numele d-vs complet</span>
+					<input class="input-field" type="text" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,40}$" placeholder="ex: Maria Popescu"/>
+					<p class="error-message">Numele nu poate fi lasat gol. Avem nevoie de el pentru a va putea contacta inapoi</p>
 				</label>
 				<label class="form-item mandatory-field">
-					<span class="input-label">Your email address</span>
-					<input class="input-field" type="email" aria-required="true"/>
+					<span class="input-label">Adresa d-vs de email</span>
+					<input class="input-field" type="email" aria-required="true" required placeholder="ex: ion.popescu@email.com"/>
+					<p class="error-message">Adresa de email nu poate fi goala si trebuie sa urmeze formatul "ion.popescu@email.com"</p>
 				</label>
 				<label class="form-item mandatory-field">
-					<span class="input-label">Your message</span>
-					<textarea class="textarea-field" aria-required="true"></textarea>
+					<span class="input-label">Mesajul d-vs</span>
+					<textarea class="textarea-field" aria-required="true" required placeholder="Cu ce va putem ajuta?"></textarea>
+					<p class="error-message">Mesajul nu poate fi lasat gol. Cu ce va putem ajuta?</p>
 				</label>
 				<div class="form-item send-message-button-wrapper">
-					<button type="submit" class="button">Send message</button>
+					<button type="submit" class="button">Trimiteti mesajul</button>
 				</div>
 			</form>
 		</div>
 	</section>
 
 	<footer class="footer" role="contentinfo">
-		<div class="box-wide clearfix">
-			<div class="box-half footer-menu">
-				<h2 class="main-heading">Contact</h2>
-				<a class="logo-box" href="#">
-					<h1 class="logo-text">Hotel Larisa</h1>
-				</a>
-				<div class="footer-menu-item">
-					<a href="tel:004512345678" class="footer-contact-item-link">+45 123 456 78</a>
+		<div class="box-wide">
+			<div class="column-grid clearfix">
+				<div class="box-third footer-menu contect-menu">
+					<h2 class="secondary-heading">Contact</h2>
+					<a class="footer-logo-box" href="#">
+						<h1 class="logo-text">HL</h1>
+					</a>
+					<p class="footer-menu-item small">Email</p>
+					<a class="footer-menu-item" href="mailto:mail@test.ing">hotel.larisa@gmail.com</a>
+					<p class="footer-menu-item small">Telefon</p>
+					<a class="footer-menu-item" href="tel:0040712345678">(004) 0712 345 678</a>
+					<p class="footer-menu-item small">Adresa</p>
+					<a class="footer-menu-item" href="https://goo.gl/maps/SK5MJmRJP1F2" target="_blank">str Ritivoiu FN, Azuga, jud Prahova, 105100</a>
 				</div>
-				<div class="footer-menu-item">
-					<a href="https://www.google.dk/maps/place/appstract+consulting/@55.6846493,12.5838984,17z/data=!3m1!4b1!4m2!3m1!1s0x46525318e0724d83:0xfd15de8c5e123e9f?hl=en" target="_blank" class="footer-contact-item-link">Borgergade 24B, 2.sal, Kobenhavns K, 1300</a>
+				<div class="box-third footer-menu">
+					<h2 class="secondary-heading">Cum ajungeti la noi</h2>
+					<div class="iframe-box">
+						<iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.11898808274987!2d25.588759335478677!3d45.443535381197776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b3152e6e15c287%3A0x4bf008d3697afcc8!2sLarisa!5e0!3m2!1sen!2sdk!4v1470931958496" frameborder="0" allowfullscreen></iframe>
+					</div>		
 				</div>
-			</div>
-			<div class="box-half footer-navigation-menu">
-				<div class="footer-navigation-item">
-					<a href="#" class="footer-navigation-item-link">About us</a>
-				</div>
-				<div class="footer-navigation-item">
-					<a href="#" class="footer-navigation-item-link">Contact</a>
+				<div class="box-third footer-menu">
+					<h2 class="secondary-heading">Social media</h2>
+					<div class="iframe-box">
+						<iframe name="f18c4f2cd4eed34" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.3/plugins/page.php?app_id=225951590755638&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FLcj5EtQ5qmD.js%3Fversion%3D42%23cb%3Dfb1c3a23dbc274%26domain%3Dwww.cazare-larisa.com%26origin%3Dhttp%253A%252F%252Fwww.cazare-larisa.com%252Ff6ceb2ffebd014%26relation%3Dparent.parent&amp;container_width=410&amp;height=500&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FHotel-Larisa-1683970621842988%2F%3Ffref%3Dts&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=true&amp;width=390" class="iframe"></iframe>
+					</div>		
 				</div>
 			</div>
 		</div>

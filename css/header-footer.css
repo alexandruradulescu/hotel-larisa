@@ -32,12 +32,17 @@
 		.global-navigation-item.active { border:none; font-weight:bold; }
 }
 
+/*///////////////////////
+//////////  Footer
+///////////////////////*/
+
 .footer { background-color:#212121; }
-.footer .box-wide { padding:3rem 0; }
+.footer .box-wide { padding:3rem 0 5rem; }
 	.footer-navigation-menu { text-align:right; }
-		.footer-menu .main-heading { text-align:left; color:#EEEEEE; }
-		.footer-menu .logo-text { color:#EEEEEE; }
-		.footer-navigation-item-link,
-		.footer-contact-item-link { display:inline-block; font-size:1.4rem; line-height:1.4; margin-bottom:.8rem; }
-		.footer-navigation-item-link:hover,
-		.footer-contact-item-link:hover { text-decoration:underline; }
+		.footer-menu .secondary-heading { text-align:left; color:#EEEEEE; margin-bottom:1.6rem; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; }
+		.footer-logo-box { display:block; }
+			.footer-logo-box .logo-text { color:#EEEEEE; text-align:left; font-size:4.8rem; line-height:1; margin-bottom:2.4rem; }
+		.footer-menu-item { display:block; font-size:2rem; color:#fff; margin-bottom:2rem; font-style:italic; }
+		.footer-menu-item.small { display:block; font-size:1.4rem; color:#9E9E9E; margin-bottom:.8rem; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; font-style:initial; }
+		.iframe-box { position:relative; padding-top:125%; }
+			.iframe { position:absolute; top:0; left:0; width:100%; height:100%; }
