@@ -19,3 +19,16 @@
     .service-image { display:block; max-width:100%; margin:auto; }
     .service-title { font-size:2.4rem; line-height:1.4; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; margin:1.6rem 0 .8rem; text-align:center; color:#E65100; }
     .service-text { font-size:1.4rem; line-height:1.4; color:#969696; text-align:center; }
+
+
+/*=========================
+========== Typography
+==========================*/
+.heading-third { font-size:2.4rem; font-size:2.4rem; line-height:1.2; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; margin-bottom:1.6rem; color:#212121; }
+.text-default { font-size:1.6rem; line-height:1.2; margin-bottom:.8rem; color:#424242;  }
+
+
+/*=========================
+========== Offers
+==========================*/
+.
