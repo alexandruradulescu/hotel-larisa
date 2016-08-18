@@ -34,6 +34,7 @@
 	<script src="scripts/utils.js"></script>
 	<script src="scripts/accordion.js"></script>
 	<script src="scripts/main.js"></script>
+	<script src="scripts/sss.min.js"></script>
 	
 	<!-- 
 		Fallback for IE 9 to recognise the HTML5 elements.
@@ -99,24 +100,24 @@
 		<div class="box-wide">
 			<h2 class="main-heading">Rooms</h2>
 			<div class="column-grid clearfix"> 
-				<a class="box-third room">
+				<div class="box-third room" data-popup="#demo-popup">
 					<figure class="room-figure" style="background-image:url(css/images/1.jpg)">
 					</figure>
-					<h3 class="room-name">{{Room name}}</h3>
+					<h3 class="room-name">Double room</h3>
 					<p class="room-info">{{room info and details, or maybe an explaination}}</p>
-				</a>
-				<a class="box-third room">
+				</div>
+				<div class="box-third room" data-popup="#demo-popup">
 					<figure class="room-figure" style="background-image:url(css/images/2.jpg)">
 					</figure>
-					<h3 class="room-name">{{Room name}}</h3>
+					<h3 class="room-name">Double room extra</h3>
 					<p class="room-info">{{room info and details, or maybe an explaination}}</p>
-				</a>
-				<a class="box-third room">
+				</div>
+				<div class="box-third room" data-popup="#demo-popup">
 					<figure class="room-figure" style="background-image:url(css/images/3.jpg)">
 					</figure>
-					<h3 class="room-name">{{Room name}}</h3>
+					<h3 class="room-name">Apartament</h3>
 					<p class="room-info">{{room info and details, or maybe an explaination}}</p>
-				</a>					
+				</div>					
 			</div>
 		</div>
 	</section>
@@ -220,5 +221,37 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="popup" id="demo-popup">
+		<div class="popup-background"></div>
+		<div class="popup-body">
+			<h3 class="popup-title main-heading">Titlul / Numele camerei</h3>
+			<div class="slider">
+				<img src="css/images/1.jpg" />
+				<img src="css/images/2.jpg" />
+				<figure><img src="css/images/3.jpg" /><figcaption class="caption">Text descriptiv</figcaption></figure>
+			</div>
+			<p class="popup-text">Mauris ut turpis nulla. Pellentesque eu sem sit amet purus dignissim bibendum.<br/><br/>Vivamus urna lacus, ornare a faucibus et, luctus vel erat. Maecenas varius augue ac arcu semper, non scelerisque leo eleifend.<br/>Pellentesque rhoncus fringilla ligula, et finibus libero efficitur nec. Duis vitae turpis id tortor luctus mattis.</p>
+		</div>
+	</div>
+	
+	<script>
+		$(function($) {
+			$(".room").on("click", function() {
+				$($(this).attr("data-popup")).addClass("is-active");
+			});
+			$(".popup-background").on("click", function() {
+				$(this).closest(".popup").removeClass("is-active");
+			})
+			$(".input-field, .textarea-field").on("change", function(e) {
+				if (!$(this)[0].validity.valid) {
+					$(this).closest(".form-item").addClass("validation-error");
+				} else {
+					$(this).closest(".form-item").removeClass("validation-error");
+				}
+			})
+			$('.slider').sss();
+		});
+	</script>
 </body>
 </html>
