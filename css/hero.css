@@ -29,6 +29,14 @@
 
 
 /*=========================
-========== Offers
+========== Contact header
 ==========================*/
-.
+.contact-header { background-color:#212121; }
+.contact-header .box-wide { text-align:right; height:auto; }
+
+    .contact-header-title,
+    .contact-header-number { display:inline-block; color:#f5f5f5; font-size:1.2rem; line-height:2; will-change:color, background-color; transition:color .3s, background-color .3s; }
+    .contact-header-number { font-weight:bold; padding:0 .4rem; }
+    .contact-header-number:focus { outline:none; background-color:#eaeaea; color:#212121;  }
+
+

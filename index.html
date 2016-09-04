@@ -57,7 +57,13 @@
 </head>
 <body>
 	
-	<header class="header" role="banner">
+	<header class="header" role="banner" id="header">
+		<div class="contact-header">
+			<div class="box-wide">
+				<span class="contact-header-title">Ne puteti contacta la telefon: </span>
+				<a class="contact-header-number" href="tel:0040712345678">(004) 0712 345 678</a>
+			</div>
+		</div>
 		<div class="box-wide clearfix">
 			<a class="logo-box" href="#">
 				<h1 class="logo-text">Hotel Larisa</h1>
@@ -68,17 +74,17 @@
 			<div class="navigation-background"></div>
 			<div class="navigation-wrapper">
 				<nav class="global-navigation" role="navigation">
-					<a class="global-navigation-item" href="destination.html">Camere</a>
-					<a class="global-navigation-item" href="destination.html">Oferte</a>
-					<a class="global-navigation-item" href="destination.html">Servicii</a>
-					<a class="global-navigation-item" href="destination.html">Contact</a>
-					<a class="global-navigation-item grab-attention" href="destination.html">Rezervari</a>
+					<a class="global-navigation-item" href="#rooms">Camere</a>
+					<a class="global-navigation-item" href="#oferte">Oferte</a>
+					<a class="global-navigation-item" href="#servicii">Servicii</a>
+					<a class="global-navigation-item" href="#contact">Contact</a>
+					<a class="global-navigation-item grab-attention" href="#contact">Rezervari</a>
 				</nav>
 			</div>
 		</div>
 	</header>
 
-	<section class="section connect-up">
+	<section class="section connect-up" id="hero">
 		<figure class="hero" style="background-image:url(css/images/4.jpg)">
 			<div class="hero-overlay"></div>
 			<div class="box-wide hero-box-container clearfix">
@@ -96,33 +102,42 @@
 		</figure>
 	</section>
 
-	<section class="section">
+	<section class="section" id="rooms">
 		<div class="box-wide">
-			<h2 class="main-heading">Rooms</h2>
+			<h2 class="main-heading">Cazare</h2>
 			<div class="column-grid clearfix"> 
 				<div class="box-third room" data-popup="#demo-popup">
 					<figure class="room-figure" style="background-image:url(css/images/1.jpg)">
 					</figure>
-					<h3 class="room-name">Double room</h3>
-					<p class="room-info">{{room info and details, or maybe an explaination}}</p>
+					<div class="room-content">
+						<h3 class="room-name">Double room</h3>
+						<p class="room-info">{{room info and details, or maybe an explaination}}</p>
+						<button type="button" class="button fancy-button">Detalii</button>
+					</div>
 				</div>
 				<div class="box-third room" data-popup="#demo-popup">
 					<figure class="room-figure" style="background-image:url(css/images/2.jpg)">
 					</figure>
-					<h3 class="room-name">Double room extra</h3>
-					<p class="room-info">{{room info and details, or maybe an explaination}}</p>
+					<div class="room-content">
+						<h3 class="room-name">Double room extra</h3>
+						<p class="room-info">{{room info and details, or maybe an explaination}}</p>
+						<button type="button" class="button fancy-button">Detalii</button>
+					</div>
 				</div>
 				<div class="box-third room" data-popup="#demo-popup">
 					<figure class="room-figure" style="background-image:url(css/images/3.jpg)">
 					</figure>
-					<h3 class="room-name">Apartament</h3>
-					<p class="room-info">{{room info and details, or maybe an explaination}}</p>
+					<div class="room-content">
+						<h3 class="room-name">Apartament</h3>
+						<p class="room-info">{{room info and details, or maybe an explaination}}</p>
+						<button type="button" class="button fancy-button">Detalii</button>
+					</div>
 				</div>					
 			</div>
 		</div>
 	</section>
 
-	<section class="section">
+	<section class="section" id="servicii">
 		<div class="box-wide">
 			<h2 class="main-heading">Servicii</h2>
 			<div class="column-grid clearfix"> 
@@ -150,42 +165,98 @@
 		</div>
 	</section>
 
-	<section class="section">
+	<section class="section" id="oferte">
 		<div class="box-wide">
 			<h2 class="main-heading">Oferte</h2>
 			<div class="column-grid clearfix">
-				<div class="offer-box box-third">
-					<h3 class="offer-title heading-third">15% reducere</h3>
-					<p class="offer-text text-default">15% reducere la camerele duble pt toata luna August, in limita disponibilitatii camerelor.</p>
+				<div class="box-half">
+					<div class="accordion">
+						<p class="accordion-headline" tabindex="0">Oferta 1</p>
+						<div class="accordion-content">
+							<div class="accordion-inner">
+								<div class="editor-content">
+									<p>To take a<strong> trivial example</strong>, which of us ever undertakes laborious physical exercise, except to obtain <em>some advantage from it?</em></p>
+									<ol>
+										<li>But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences</li>
+										<li>Or one who avoids a pain that produces no resultant pleasure</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion">
+						<p class="accordion-headline" tabindex="0">Oferta 2</p>
+						<div class="accordion-content">
+							<div class="accordion-inner">
+								<div class="editor-content">
+									<p>To take a<strong> trivial example</strong>, which of us ever undertakes laborious physical exercise, except to obtain <em>some advantage from it?</em></p>
+									<ol>
+										<li>But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences</li>
+										<li>Or one who avoids a pain that produces no resultant pleasure</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box-half">
+					<div class="accordion">
+						<p class="accordion-headline" tabindex="0">Oferta 3</p>
+						<div class="accordion-content">
+							<div class="accordion-inner">
+								<div class="editor-content">
+									<p>To take a<strong> trivial example</strong>, which of us ever undertakes laborious physical exercise, except to obtain <em>some advantage from it?</em></p>
+									<ol>
+										<li>But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences</li>
+										<li>Or one who avoids a pain that produces no resultant pleasure</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion">
+						<p class="accordion-headline" tabindex="0">Oferta 4</p>
+						<div class="accordion-content">
+							<div class="accordion-inner">
+								<div class="editor-content">
+									<p>To take a<strong> trivial example</strong>, which of us ever undertakes laborious physical exercise, except to obtain <em>some advantage from it?</em></p>
+									<ol>
+										<li>But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences</li>
+										<li>Or one who avoids a pain that produces no resultant pleasure</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="section">
+	<section class="section" id="contact">
 		<div class="box-narrow">
 			<h2 class="main-heading">Rezervati sau contactati-ne</h2>
 			<p class="secondary-heading">Doriti sa faceti o rezervare sau aveti intrebari pentru noi? Va rugam sa completati formularul de mai jos si va vom raspunde in maxim 24 de ore. Daca este ceva urgent, ne puteti suna direct la numarul <a class="phone-number" href="tel:0040712345678">(004) 0712 345 678</a></p>
 		</div>
 		<div class="box-tiny">
-			<form class="form" role="form">
+			<form class="form" role="form" method="POST" action="https://formspree.io/radulescu.alexandru.doru@gmail.com">
 				<label class="form-item mandatory-field">
 					<span class="input-label">Numele d-vs complet</span>
-					<input class="input-field" type="text" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,40}$" placeholder="ex: Maria Popescu"/>
+					<input class="input-field" type="text" name="Nume" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,40}$" placeholder="ex: Maria Popescu"/>
 					<p class="error-message">Numele nu poate fi lasat gol. Avem nevoie de el pentru a va putea contacta inapoi</p>
 				</label>
 				<label class="form-item mandatory-field">
 					<span class="input-label">Adresa d-vs de email</span>
-					<input class="input-field" type="email" aria-required="true" required placeholder="ex: ion.popescu@email.com"/>
+					<input class="input-field" type="email" name="Email" aria-required="true" required placeholder="ex: ion.popescu@email.com"/>
 					<p class="error-message">Adresa de email nu poate fi goala si trebuie sa urmeze formatul "ion.popescu@email.com"</p>
 				</label>
 				<label class="form-item mandatory-field">
 					<span class="input-label">Mesajul d-vs</span>
-					<textarea class="textarea-field" aria-required="true" required placeholder="Cu ce va putem ajuta?"></textarea>
+					<textarea class="textarea-field" name="Mesaj" aria-required="true" required placeholder="Cu ce va putem ajuta?"></textarea>
 					<p class="error-message">Mesajul nu poate fi lasat gol. Cu ce va putem ajuta?</p>
 				</label>
 				<div class="form-item send-message-button-wrapper">
-					<button type="submit" class="button">Trimiteti mesajul</button>
+					<button type="submit" class="button submit-button">Trimiteti mesajul</button>
 				</div>
 			</form>
 		</div>
@@ -251,6 +322,11 @@
 				}
 			})
 			$('.slider').sss();
+			$(".global-navigation-item").on("click", function(e) {
+				e.preventDefault();
+				var target = $(this).attr("href");
+				$("html, body").animate({ scrollTop: $(target).offset().top - 50 }, 600);
+			})
 		});
 	</script>
 </body>
