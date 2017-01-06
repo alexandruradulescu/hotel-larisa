@@ -5,7 +5,7 @@
 	.input-field[required] ~ .input-label:after { content:"*"; margin-left:.4rem; }
 	.input-field,
 	.textarea-field { font-size:1.4rem; width:100%; height:4.8rem; background-color:#fff; display:block; line-height:1.2; border:1px dotted #9E9E9E; padding:1.6rem; box-sizing:border-box; outline:none; }
-	.textarea-field { line-height:1.2; height:5em; resize:none; }
+	.textarea-field { line-height:1.2; height:9.6rem; resize:none; }
 	.input-field:focus,
 	.textarea-field:focus { outline:none; border-color:#000; }
 	.checkbox-field { display:block; float:left;  }
@@ -31,3 +31,7 @@
 	.fancy-button,
 	.fancy-button:hover,
 	.fancy-button:focus { color:#212121; background-color:transparent; outline:none; border-top:.1rem dotted #212121; border-bottom:.1rem dotted #212121; padding:0.8rem 2.4rem; margin:auto; }
+
+@media all and (max-width:540px) {
+	.textarea-field { height:13.8rem; }
+}

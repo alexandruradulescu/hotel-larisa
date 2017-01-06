@@ -3,8 +3,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /*We set the font-size to 62.5% so that it reduces from 16 px by default to 10 px in all browsers. Now 1rem=10px so it is very easy to calculate rems by default, no need for a calculator*/
 html { height:100%; font-size:10px; }
-body { height:100%; font-family:"Roboto", Arial, sans-serif; background-color:#FAFAFA; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; -webkit-overflow-scrolling:touch; }
+body { min-height:100%; font-family:"Roboto", Arial, sans-serif; background-color:#FAFAFA; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; -webkit-overflow-scrolling:touch; }
 input::-ms-clear { display:none; } /* Removing the "clear" that IE ads automatically in the input fields */
+
+@media all and (max-width:768px) {
+	body { padding-top:6.4rem; }
+}
 
 /* site anchors */
 a { color:inherit; }
@@ -15,9 +19,9 @@ a:focus, button:focus, input:focus, textarea:focus { outline:2px solid #000; } /
 .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; }
 
 
-.box-wide { width:92%; margin:auto; min-width:80rem; }
+.box-wide { width:92%; max-width:120rem; margin:auto; min-width:80rem; }
 .box-narrow { width:66%; margin:auto; min-width:60rem; }
-.box-tiny { width:50%; margin:auto; min-width:30rem; }
+.box-tiny { width:50%; max-width:60rem; min-width:30rem; margin:auto; min-width:30rem; }
 
 /*------------------- Simple Grid ------------------------*/
 .box-full { width:100%; float:left; -moz-box-sizing:border-box; box-sizing:border-box; }
@@ -41,12 +45,22 @@ a:focus, button:focus, input:focus, textarea:focus { outline:2px solid #000; } /
 	.box-wide { min-width:auto; }
 }
 @media all and (max-width:768px) {
+
+	.box-third,
+	.box-quarter { width:50%; }
+	.box-two-thirds,
+	.box-three-quarters { width:100%; }
+
 	.column-grid > .box-third,
 	.column-grid > .box-quarter { width:calc(50% - 2rem); }
 	.column-grid > .box-two-thirds,
 	.column-grid > .box-three-quarters { width:calc(100% - 2rem); }
 }
 @media all and (max-width:540px) {
+	.box-third,
+	.box-quarter,
+	.box-half { width:100%; }
+
 	.column-grid > .box-third,
 	.column-grid > .box-quarter,
 	.column-grid > .box-half  { width:calc(100% - 2rem); }
@@ -59,15 +73,25 @@ a:focus, button:focus, input:focus, textarea:focus { outline:2px solid #000; } /
 .section { margin:7rem 0; position:relative; }
 .section.connect-up { margin-top:0; }
 .section.connect-bottom { margin-bottom:0; }
+
+@media all and (max-width:768px) {
+	.section { margin:4rem 0; }
+}
 	
 /*
 Popup
 */
-.popup { position:fixed; top:0; bottom:0; width:100%; height:100%; visibility:hidden; opacity:0; will-change:transition; transition:visibility .3s, opacity .3s;  }
+.popup { position:fixed; top:0; bottom:0; width:100%; height:100%; visibility:hidden; opacity:0; will-change:transition; transition:visibility .3s, opacity .3s; z-index:1; }
 .popup.is-active { visibility:visible; opacity:1; }
 	.popup-background { position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0, 0, 0, .5); cursor:pointer; }
-	.popup-body { position:relative; width:75%; min-width:30rem; max-width:60rem; margin:auto; background-color:#fff; padding:2.4rem; top:50%; transform:translate3d(0, -50%, 0); box-sizing:border-box; }
-	.popup-text { font-size:1.6rem; }
+	.popup-body { position:relative; width:75%; min-width:28rem; max-width:60rem; max-height:80%; overflow:auto; margin:auto; background-color:#fff; padding:2.4rem; top:50%; transform:translate3d(0, -50%, 0); box-sizing:border-box; }
+	.popup-text { font-size:1.6rem; line-height:1.4; }
+
+@media all and (max-width:768px) {
+	.popup-body { padding:0 1.6rem 1.6rem 1.6rem; }
+	.popup-title.main-heading { font-size:2.8rem; line-height:1.2; margin:.8rem 0; }
+}
+
 /*
 Slider
 */
@@ -80,3 +104,12 @@ Slider
 .sssnext { right:3%; background-position:-26px 50%; }
 .sssprev:hover, .sssnext:hover { cursor:pointer; }
 .ssslide .caption { position:absolute; bottom:0; padding:1.6rem 2.4rem; background-color:rgba(255, 255, 255, .7); left:0; width:100%; font-size:1.6rem; }
+
+@media all and (max-width:768px) {
+	.slider { width:calc(100% + 3.2rem); margin-left:-1.6rem; margin-bottom:1.6rem; }
+
+}
+
+
+.loader { position:fixed; top:0; left:0; width:100%; height:100%; background-color:#fff; opacity:1; visibility:visible; z-index:2; transition:opacity .25s, visibility .25s; }
+.loader.is-done { opacity:0; visibility:hidden; }

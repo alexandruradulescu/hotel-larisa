@@ -13,23 +13,50 @@
 	.global-navigation-item.grab-attention { background-color:#FFA000;  border-bottom:.2rem solid #FFA000; transition:background-color .3s, border .3s; font-weight:500; letter-spacing:.03em; }
 	.global-navigation-item.grab-attention:hover  { background-color:#FF8F00; border-bottom:.2rem solid #FF8F00; }
 
+	.global-navigation-icon.mdi { display:none; font-size:2rem; margin-right:.8rem; }
+
 @media all and (min-width:1025px) {
 	.global-navigation-item:hover { border-bottom:.2rem solid #000; outline:none; }
 }
 @media all and (max-width:768px) {
-	.mobile-menu-toggle { display:block; width:4.8rem; height:4.8rem; position:absolute; right:1rem; top:50%; transform:translateY(-50%); cursor:pointer; }
+	.header { position:fixed; top:0; z-index:1; background-color:#fff; left:0; width:100%; border-bottom:.1rem dotted #969696; }
+	.header > .box-wide { height:6.4rem; }
+
+	.logo-text { font-size:2.8rem; }
+
+	.mobile-menu-toggle { display:block; width:4.8rem; height:4.8rem; position:absolute; right:0; top:50%; transform:translateY(-50%); cursor:pointer; }
 	.mobile-menu-toggle:focus, { outline:2px solid #000; }
-		.mobile-menu-line { width:3.2rem; height:.2rem; display:block; margin:50% auto auto auto; transform:translateY(-50%); background-color:#414141; }
-		.mobile-menu-line:before { content:""; width:3.2rem; height:.2rem; display:block; position:absolute; top:1.05rem; margin:auto; background-color:#414141; }
-		.mobile-menu-line:after { content:""; width:3.2rem; height:.2rem; display:block; position:absolute; bottom:1.05rem; margin:auto; background-color:#414141; }
+		.mobile-menu-line { width:2.4rem; height:.2rem; display:block; margin:50% auto auto auto; transform:translateY(-50%); background-color:#414141; }
+		.mobile-menu-line:before { content:""; width:2.8rem; height:.2rem; display:block; position:absolute; top:.8rem; margin:auto; background-color:#414141; }
+		.mobile-menu-line:after { content:""; width:2.8rem; height:.2rem; display:block; position:absolute; bottom:.8rem; margin:auto; background-color:#414141; }
 		
 	.navigation-wrapper { position:fixed; height:100%; width:20rem; position:fixed; top:0; right:-20rem; background-color:#f4f4f4; z-index:1; transition:transform .3s; }
 	.navigation-wrapper.active { transform:translate3d(-20rem, 0, 0); }
 		.navigation-background { display:none; position:fixed; top:0; left:0; bottom:0; right:0; background-color:rgba(0, 0, 0, .3); z-index:1; }
 		.navigation-background.active { display:block; }
 		.global-navigation { position:relative; padding-bottom:1.6rem; }
-		.global-navigation-item { display:block; padding:.8rem 1.6rem .8rem 3.2rem; line-height:2.667; }
+		.global-navigation-item { display:block; padding:.8rem 1.6rem; line-height:2.667; }
 		.global-navigation-item.active { border:none; font-weight:bold; }
+		.global-navigation-icon.mdi { display:inline-block; vertical-align:middle; }
+}
+
+/*=========================
+========== Contact header
+==========================*/
+.contact-header { background-color:#212121; }
+.contact-header .box-wide { text-align:right; height:auto; }
+
+    .contact-header-title,
+    .contact-header-number { display:inline-block; color:#f5f5f5; font-size:1.2rem; line-height:2; will-change:color, background-color; transition:color .3s, background-color .3s; }
+    .contact-header-number { font-weight:bold; padding:0 .4rem; }
+    .contact-header-number:focus { outline:none; background-color:#eaeaea; color:#212121;  }
+
+@media all and (max-width:768px) {
+	.contact-header { position: fixed; bottom:.8rem; right:.8rem; min-width:20rem; border:.1rem dotted #fff; }
+	.contact-header > .box-wide { text-align:initial; padding:.4rem 0 .8rem; }
+	.contact-header-title, .contact-header-number { display:block; }
+	.contact-header-number { line-height:1.2; font-size:2rem; padding:0;  }
+
 }
 
 /*///////////////////////
@@ -44,5 +71,7 @@
 			.footer-logo-box .logo-text { color:#EEEEEE; text-align:left; font-size:4.8rem; line-height:1; margin-bottom:2.4rem; }
 		.footer-menu-item { display:block; font-size:2rem; color:#fff; margin-bottom:2rem; font-style:italic; }
 		.footer-menu-item.small { display:block; font-size:1.4rem; color:#9E9E9E; margin-bottom:.8rem; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; font-style:initial; }
-		.iframe-box { position:relative; padding-top:125%; }
+		.iframe-box { position:relative; padding-top:56.25%; }
 			.iframe { position:absolute; top:0; left:0; width:100%; height:100%; }
+
+

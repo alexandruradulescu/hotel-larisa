@@ -27,14 +27,8 @@
 	<link href="css/accordion.css" type="text/css" rel="stylesheet">
 	<link href="css/hero.css" type="text/css" rel="stylesheet">
 	<link href="css/rooms.css" type="text/css" rel="stylesheet">
-	<link href="css/print.css" type="text/css" rel="stylesheet" media="print">
-	<script src="scripts/underscore.js"></script>
-	<script src="scripts/as.js"></script>
-	<script src="scripts/jquery-1.10.2.min.js"></script>
-	<script src="scripts/utils.js"></script>
-	<script src="scripts/accordion.js"></script>
-	<script src="scripts/main.js"></script>
-	<script src="scripts/sss.min.js"></script>
+	<link href="css/_material-design-icons.css" rel="stylesheet" type="text/css">
+
 	
 	<!-- 
 		Fallback for IE 9 to recognise the HTML5 elements.
@@ -57,11 +51,13 @@
 </head>
 <body>
 	
+	<section class="loader"></section>
+
 	<header class="header" role="banner" id="header">
 		<div class="contact-header">
 			<div class="box-wide">
 				<span class="contact-header-title">Ne puteti contacta la telefon: </span>
-				<a class="contact-header-number" href="tel:0040712345678">(004) 0712 345 678</a>
+				<a class="contact-header-number" href="tel:0040722727875">(004) 0722 727 875</a>
 			</div>
 		</div>
 		<div class="box-wide clearfix">
@@ -74,29 +70,48 @@
 			<div class="navigation-background"></div>
 			<div class="navigation-wrapper">
 				<nav class="global-navigation" role="navigation">
-					<a class="global-navigation-item" href="#rooms">Camere</a>
-					<a class="global-navigation-item" href="#oferte">Oferte</a>
-					<a class="global-navigation-item" href="#servicii">Servicii</a>
-					<a class="global-navigation-item" href="#contact">Contact</a>
-					<a class="global-navigation-item grab-attention" href="#contact">Rezervari</a>
+					<a class="global-navigation-item" href="#rooms">
+						<span class="global-navigation-icon mdi mdi-hotel"></span>
+						Camere
+					</a>
+					<a class="global-navigation-item" href="#oferte">
+						<span class="global-navigation-icon mdi mdi-star"></span>
+						Oferte
+					</a>
+					<a class="global-navigation-item" href="#servicii">
+						<span class="global-navigation-icon mdi mdi-brightness-5"></span>
+						Servicii
+					</a>
+					<a class="global-navigation-item" href="#info">
+						<span class="global-navigation-icon mdi mdi-information"></span>
+						Informatii
+					</a>
+					<a class="global-navigation-item" href="#contact">
+						<span class="global-navigation-icon mdi mdi-email"></span>
+						Contact
+					</a>
+					<a class="global-navigation-item grab-attention" href="#contact">
+						<span class="global-navigation-icon mdi mdi-bookmark-plus"></span>
+						Rezervari
+					</a>
 				</nav>
 			</div>
 		</div>
 	</header>
 
 	<section class="section connect-up" id="hero">
-		<figure class="hero" style="background-image:url(css/images/4.jpg)">
+		<figure class="hero" style="background-image:url(css/images/apartament.jpg)">
 			<div class="hero-overlay"></div>
 			<div class="box-wide hero-box-container clearfix">
 				<div class="hero-left-box box-half">
-					<h2 class="main-heading">Welcome to Hotel Larisa</h2>
+					<h2 class="main-heading">Hotel Larisa</h2>
 				</div>
 				<div class="hero-right-box box-half">
 					<p class="hero-text">
-						Welcoming rooms
-						<small class="hero-small-text">from 100 ron/night</small>
+						Camere primitoare
+						<small class="hero-small-text">de la 100 ron/noapte</small>
 					</p>
-					<a href="#" class="button is-inline golden is-large">Book now</a>
+					<a href="#contact" class="button is-inline golden is-large action-button">Rezervari</a>
 				</div>
 			</div>
 		</figure>
@@ -106,33 +121,62 @@
 		<div class="box-wide">
 			<h2 class="main-heading">Cazare</h2>
 			<div class="column-grid clearfix"> 
-				<div class="box-third room" data-popup="#demo-popup">
-					<figure class="room-figure" style="background-image:url(css/images/1.jpg)">
+				<div class="box-quarter room popup-toggle" data-popup="#studio">
+					<figure class="room-figure" style="background-image:url(css/images/dubla-2-min.jpg)">
 					</figure>
 					<div class="room-content">
-						<h3 class="room-name">Double room</h3>
-						<p class="room-info">{{room info and details, or maybe an explaination}}</p>
+						<h3 class="room-name">Studio</h3>
+						<p class="room-info">
+							Paturi: Pat matrimonial, 2 Paturi twin <br/>
+							Nr. maxim ocupanti: 4<br/>
+							Camere disponibile: 12<br/>
+							Panorama: Vedere spre Muntii Baiului sau Muntii Bucegi
+						</p>
 						<button type="button" class="button fancy-button">Detalii</button>
 					</div>
 				</div>
-				<div class="box-third room" data-popup="#demo-popup">
-					<figure class="room-figure" style="background-image:url(css/images/2.jpg)">
-					</figure>
-					<div class="room-content">
-						<h3 class="room-name">Double room extra</h3>
-						<p class="room-info">{{room info and details, or maybe an explaination}}</p>
-						<button type="button" class="button fancy-button">Detalii</button>
-					</div>
-				</div>
-				<div class="box-third room" data-popup="#demo-popup">
-					<figure class="room-figure" style="background-image:url(css/images/3.jpg)">
+				<div class="box-quarter room popup-toggle" data-popup="#apartament">
+					<figure class="room-figure" style="background-image:url(css/images/apartament.jpg)">
 					</figure>
 					<div class="room-content">
 						<h3 class="room-name">Apartament</h3>
-						<p class="room-info">{{room info and details, or maybe an explaination}}</p>
+						<p class="room-info">
+							Paturi: 2 Paturi matrimoniale<br/>
+							Nr. maxim ocupanti: 4<br/>
+							Camere disponibile: 2<br/>
+							Panorama: Vedere spre Muntii Baiului sau Muntii Bucegi
+						</p>
 						<button type="button" class="button fancy-button">Detalii</button>
 					</div>
-				</div>					
+				</div>
+				<div class="box-quarter room popup-toggle" data-popup="#dubla-matrimoniala">
+					<figure class="room-figure" style="background-image:url(css/images/camera-dubla.jpg)">
+					</figure>
+					<div class="room-content">
+						<h3 class="room-name">Camera dubla matrimoniala</h3>
+						<p class="room-info">
+							Paturi: Pat matrimonial<br/>
+							Nr. maxim ocupanti: 2<br/>
+							Camere disponibile: 11<br/>
+							Panorama: Vedere spre Muntii Baiului sau Muntii Bucegi	
+						</p>
+						<button type="button" class="button fancy-button">Detalii</button>
+					</div>
+				</div>	
+				<div class="box-quarter room popup-toggle" data-popup="#twin">
+					<figure class="room-figure" style="background-image:url(css/images/garsoniera.jpg)">
+					</figure>
+					<div class="room-content">
+						<h3 class="room-name">Camera Twin</h3>
+						<p class="room-info">
+							Paturi: 2 Paturi twin<br/>
+							Nr. maxim ocupanti: 2<br/>
+							Camere disponibile: 2<br/>
+							Panorama: Vedere spre Muntii Baiului sau Muntii Bucegi
+						</p>
+						<button type="button" class="button fancy-button">Detalii</button>
+					</div>
+				</div>				
 			</div>
 		</div>
 	</section>
@@ -141,25 +185,35 @@
 		<div class="box-wide">
 			<h2 class="main-heading">Servicii</h2>
 			<div class="column-grid clearfix"> 
-				<div class="box-quarter service">
+				<div class="box-third service">
 					<img class="service-image" src="css/images/wifi.png" role="presentation"/>
 					<h3 class="service-title">Wifi gratis</h3>
 					<p class="service-text">Aveti wifi gratuit si nelimitat pe perioada sederii la noi. Parola o veti gasi in camera, afisata.</p>
 				</div>
-				<div class="box-quarter service">
-					<img class="service-image" src="css/images/terrace.png" role="presentation"/>
+				<div class="box-third service">
+					<img class="service-image" src="css/images/meal.png" role="presentation"/>
 					<h3 class="service-title">Restaurant</h3>
-					<p class="service-text">Restaurantul va asteapta intre orele 7-22. Si nu trebuie sa va faceti griji pentru locruri. Intotdeauna sunt suficiente pentru toti invitatii nostri.</p>
+					<p class="service-text">Restaurantul va asteapta intre orele 8 si 22. Si nu trebuie sa va faceti griji pentru locruri, pentru dumneavoastra si prietenii vostri.</p>
 				</div>
-				<div class="box-quarter service">
+				<div class="box-third service">
 					<img class="service-image" src="css/images/car.png" role="presentation"/>
 					<h3 class="service-title">Parcare gratuita</h3>
 					<p class="service-text">Exista locuri pentru toti inviattii nostri. Si chiart si pt prieteni daca va viziteaza, de exemplu pentru a lua cina impreuna.</p>
 				</div>
-				<div class="box-quarter service">
-					<img class="service-image" src="css/images/mountain.png" role="presentation"/>
-					<h3 class="service-title">Activitati montane</h3>
-					<p class="service-text">Brosuri detaliate cu activitati montane, si toate detaliile necesare va asteapta la receptie. Si daca aveti nelamuriri, cineva va va fi la dispozitie.</p>
+				<div class="box-third service">
+					<img class="service-image" src="css/images/balcony.png" role="presentation"/>
+					<h3 class="service-title">Balcon</h3>
+					<p class="service-text">Toate camerele au balcon cu vedere la Muntii Bucegi sau la Muntii Baiului.</p>
+				</div>
+				<div class="box-third service">
+					<img class="service-image" src="css/images/terrace.png" role="presentation"/>
+					<h3 class="service-title">Terasa</h3>
+					<p class="service-text">Terasa oferă o panoramă superbă a paraului Azuga și o relaxare completă după o zi extenuantă.</p>
+				</div>
+				<div class="box-third service">
+					<img class="service-image" src="css/images/luggage.png" role="presentation"/>
+					<h3 class="service-title">Camera de bagaje</h3>
+					<p class="service-text">Hotelul detine o camera pentru pastrarea bagajelor, inclusiv a echipamentelor de ski.</p>
 				</div>
 			</div>
 		</div>
@@ -171,15 +225,27 @@
 			<div class="column-grid clearfix">
 				<div class="box-half">
 					<div class="accordion">
-						<p class="accordion-headline" tabindex="0">Oferta 1</p>
+						<p class="accordion-headline" tabindex="0">Petrece Ziua Romaniei la Hotel Larisa din Azuga. (29.11 - 01.12.2016)</p>
 						<div class="accordion-content">
 							<div class="accordion-inner">
 								<div class="editor-content">
-									<p>To take a<strong> trivial example</strong>, which of us ever undertakes laborious physical exercise, except to obtain <em>some advantage from it?</em></p>
-									<ol>
-										<li>But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences</li>
-										<li>Or one who avoids a pain that produces no resultant pleasure</li>
-									</ol>
+									<p>
+									Platesti 2 nopti si stai 3!</br/>
+									<br/>
+									Pachetul include:</br/></p>
+									<ul>
+										<li>2 nopti cazare cu demipensiune</li>
+										<li>a 3-a noapte de cazare este gratuita</li>
+										<li>masa traditionala de 1 decembrie cu foc de tabara, vin fiert, tuica fiarta</li>
+									</ul>
+									<p>
+									Tarif: 320 Ron persoana/ camera dubla</br/>
+									</br/>
+									Platesti 3 nopti si stai 4!</br/>
+									Tarif 420 Ron persoana/ camera dubla </br/>
+									</br/>
+									Copiii intre 5-14 ani au 50% reducere</br/>
+									Copiii sub 5 ani au gratuitate la cazare</br/>
 								</div>
 							</div>
 						</div>
@@ -233,16 +299,58 @@
 		</div>
 	</section>
 
+	
+
+	<section class="section" id="info">
+		<div class="box-narrow">
+			<h2 class="main-heading">Hotel Larisa</h2>
+			<div class="slider">
+				<img src="css/images/receptie-min.jpg" />
+				<img src="css/images/restaurant-min.jpg" />
+				<img src="css/images/sala-min.jpg" />
+				<img src="css/images/restaurant2-min.jpg" />
+			</div>
+
+			<p class="secondary-heading text-align-left">
+			Aflat intr-o oaza de verdeata, inconjurat de un cadru natural feeric, linistit si relaxant, Hotel Larisa va asteapta in Azuga, vizavi de telegondola, la baza partiei de ski Sorica.<br/><br/>
+
+			Hotel Larisa pune la dispozitia oaspetilor sai 82 de spatii de cazare.<br/>
+			Cele 82 de spatii de cazare sunt structurate astfel: <br/><br/>
+
+			11 camere duble matrimoniale <br/>
+			2 duble twin<br/>
+			12 garsoniere <br/>
+			2 apartamente. <br/><br/>
+
+			Spatiile de cazare sunt dotate cu televizor, grup sanitar propriu, conexiune wi-fi gratis si incalzire centrala, pentru a va asigura tot confortul. Toate camerele au balcon cu vedere la Muntii Bucegi sau la Muntii Baiului.<br/><br/>
+
+			Hotelul detine parcare proprie, parcarea clientilor hotelului fiind gratuita.<br/><br/>
+
+			Restaurantul hotelului cu 130 locuri va asteapta cu un meniu diversificat.<br/><br/>
+
+			Clientii din categoria business se pot bucura de o sala de conferinte cu capacitatea de 60 de locuri, dotata cu aparatura necesara desfasurarii proiectelor dvs.<br/><br/>
+
+
+			Termeni rezervare si politica de anulare:<br/>
+			- dupa confirmarea rezervarii de catre reprezentantul unitatii de cazare clientul va efectua plata unui avans in valoare de 30% din suma totala. Rezervarea este garantata in momentul in care reprezentantul unitatii confirma primirea sumei (avans) in contul stabilit.<br/><br/>
+
+			Politici hotel:<br/>
+			- check in: 14:00<br/>
+			- check out: 11:00
+			</p>
+		</div>
+	</section>
+
 	<section class="section" id="contact">
 		<div class="box-narrow">
 			<h2 class="main-heading">Rezervati sau contactati-ne</h2>
 			<p class="secondary-heading">Doriti sa faceti o rezervare sau aveti intrebari pentru noi? Va rugam sa completati formularul de mai jos si va vom raspunde in maxim 24 de ore. Daca este ceva urgent, ne puteti suna direct la numarul <a class="phone-number" href="tel:0040712345678">(004) 0712 345 678</a></p>
 		</div>
 		<div class="box-tiny">
-			<form class="form" role="form" method="POST" action="https://formspree.io/radulescu.alexandru.doru@gmail.com">
+			<form class="form contact-form" role="form" method="POST" action="https://formspree.io/larisahotel@yahoo.com">
 				<label class="form-item mandatory-field">
 					<span class="input-label">Numele d-vs complet</span>
-					<input class="input-field" type="text" name="Nume" aria-required="true" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,40}$" placeholder="ex: Maria Popescu"/>
+					<input class="input-field" type="text" name="Nume" aria-required="true" required pattern="^[a-zA-Z ][a-zA-Z ]{1,50}$" placeholder="ex: Maria Popescu"/>
 					<p class="error-message">Numele nu poate fi lasat gol. Avem nevoie de el pentru a va putea contacta inapoi</p>
 				</label>
 				<label class="form-item mandatory-field">
@@ -271,62 +379,147 @@
 						<h1 class="logo-text">HL</h1>
 					</a>
 					<p class="footer-menu-item small">Email</p>
-					<a class="footer-menu-item" href="mailto:mail@test.ing">hotel.larisa@gmail.com</a>
+					<a class="footer-menu-item" href="mailto:larisahotel@yahoo.com">larisahotel@yahoo.com</a>
 					<p class="footer-menu-item small">Telefon</p>
-					<a class="footer-menu-item" href="tel:0040712345678">(004) 0712 345 678</a>
+					<a class="footer-menu-item" href="tel:0040722727875">(004) 0722 727 875</a>
+					<a class="footer-menu-item" href="tel:0040344806957 ">(004) 0344 806 957 </a>
 					<p class="footer-menu-item small">Adresa</p>
 					<a class="footer-menu-item" href="https://goo.gl/maps/SK5MJmRJP1F2" target="_blank">str Ritivoiu FN, Azuga, jud Prahova, 105100</a>
+					<p class="footer-menu-item small">Facebook</p>
+					<a class="footer-menu-item" href="https://www.facebook.com/hotellarisa/?fref=ts" target="_blank">Hotel Larisa</a>
 				</div>
-				<div class="box-third footer-menu">
+				<div class="box-two-thirds footer-menu">
 					<h2 class="secondary-heading">Cum ajungeti la noi</h2>
 					<div class="iframe-box">
 						<iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.11898808274987!2d25.588759335478677!3d45.443535381197776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b3152e6e15c287%3A0x4bf008d3697afcc8!2sLarisa!5e0!3m2!1sen!2sdk!4v1470931958496" frameborder="0" allowfullscreen></iframe>
-					</div>		
-				</div>
-				<div class="box-third footer-menu">
-					<h2 class="secondary-heading">Social media</h2>
-					<div class="iframe-box">
-						<iframe name="f18c4f2cd4eed34" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.3/plugins/page.php?app_id=225951590755638&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FLcj5EtQ5qmD.js%3Fversion%3D42%23cb%3Dfb1c3a23dbc274%26domain%3Dwww.cazare-larisa.com%26origin%3Dhttp%253A%252F%252Fwww.cazare-larisa.com%252Ff6ceb2ffebd014%26relation%3Dparent.parent&amp;container_width=410&amp;height=500&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FHotel-Larisa-1683970621842988%2F%3Ffref%3Dts&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=true&amp;width=390" class="iframe"></iframe>
 					</div>		
 				</div>
 			</div>
 		</div>
 	</footer>
 
-	<div class="popup" id="demo-popup">
+	
+	<div class="popup" id="dubla-matrimoniala">
 		<div class="popup-background"></div>
 		<div class="popup-body">
-			<h3 class="popup-title main-heading">Titlul / Numele camerei</h3>
+			<h3 class="popup-title main-heading">Camera dubla matrimoniala</h3>
 			<div class="slider">
-				<img src="css/images/1.jpg" />
-				<img src="css/images/2.jpg" />
-				<figure><img src="css/images/3.jpg" /><figcaption class="caption">Text descriptiv</figcaption></figure>
+				<img src="css/images/camera-dubla.jpg" />
+				<img src="css/images/dubla-2-min.jpg" />
+				<img src="css/images/baie-2-min.jpg" />
+				<img src="css/images/baie-min.jpg" />
+			</div>
+			<p class="popup-text">
+			Paturi: Pat matrimonial<br/>
+			Nr. maxim ocupanti: 2<br/>
+			Camere disponibile: 11<br/>
+			Panorama: Vedere spre Muntii Baiului sau Muntii Bucegi
+			</p>
+		</div>
+	</div>
+	<div class="popup" id="twin">
+		<div class="popup-background"></div>
+		<div class="popup-body">
+			<h3 class="popup-title main-heading">Camera twin</h3>
+			<div class="slider">
+				<img src="css/images/garsoniera.jpg" />
+				<img src="css/images/dubla-2-min.jpg" />
+				<img src="css/images/baie-2-min.jpg" />
+				<img src="css/images/baie-min.jpg" />
+			</div>
+			<p class="popup-text">
+			Paturi: 2 Paturi twin<br/>
+			Nr. maxim ocupanti: 2<br/>
+			Camere disponibile: 2<br/>
+			Panorama: Vedere spre Muntii Baiului sau Muntii Bucegi
+			</p>
+		</div>
+	</div>
+	<div class="popup" id="studio">
+		<div class="popup-background"></div>
+		<div class="popup-body">
+			<h3 class="popup-title main-heading">Studio</h3>
+			<div class="slider">
+				<img src="css/images/garsoniera.jpg" />
+				<img src="css/images/garsoniera-2-min.jpg" />
+				<img src="css/images/garsoniera3-min.jpg" />
+				<img src="css/images/baie-min.jpg" />
+				<img src="css/images/baie-2-min.jpg" />
+			</div>
+			<p class="popup-text">
+			Paturi: Pat matrimonial, 2 Paturi twin <br/>
+			Nr. maxim ocupanti: 4<br/>
+			Camere disponibile: 12<br/>
+			Panorama: Vedere spre Muntii Baiului sau Muntii Bucegi
+			</p>
+		</div>
+	</div>
+	<div class="popup" id="apartament">
+		<div class="popup-background"></div>
+		<div class="popup-body">
+			<h3 class="popup-title main-heading">Apartament</h3>
+			<div class="slider">
+				<img src="css/images/apartament.jpg" />
+				<img src="css/images/apartament-2-min.jpg" />
+				<img src="css/images/apartament-3-min.jpg" />
+				<img src="css/images/baie-min.jpg" />
+				<img src="css/images/baie-2-min.jpg" />
+			</div>
+			<p class="popup-text">
+			Paturi: 2 Paturi matrimoniale<br/>
+			Nr. maxim ocupanti: 4<br/>
+			Camere disponibile: 2<br/>
+			Panorama: Vedere spre Muntii Baiului sau Muntii Bucegi
+			</p>
+		</div>
+	</div>
+
+
+
+
+	<!--<div class="popup" id="garsoniera">
+		<div class="popup-background"></div>
+		<div class="popup-body">
+			<h3 class="popup-title main-heading">Garsoniera</h3>
+			<div class="slider">
+				<img src="css/images/garsoniera.jpg" />
 			</div>
 			<p class="popup-text">Mauris ut turpis nulla. Pellentesque eu sem sit amet purus dignissim bibendum.<br/><br/>Vivamus urna lacus, ornare a faucibus et, luctus vel erat. Maecenas varius augue ac arcu semper, non scelerisque leo eleifend.<br/>Pellentesque rhoncus fringilla ligula, et finibus libero efficitur nec. Duis vitae turpis id tortor luctus mattis.</p>
 		</div>
 	</div>
+	<div class="popup" id="apartament">
+		<div class="popup-background"></div>
+		<div class="popup-body">
+			<h3 class="popup-title main-heading">Apartament</h3>
+			<div class="slider">
+				<img src="css/images/apartament.jpg" />
+			</div>
+			<p class="popup-text">Mauris ut turpis nulla. Pellentesque eu sem sit amet purus dignissim bibendum.<br/><br/>Vivamus urna lacus, ornare a faucibus et, luctus vel erat. Maecenas varius augue ac arcu semper, non scelerisque leo eleifend.<br/>Pellentesque rhoncus fringilla ligula, et finibus libero efficitur nec. Duis vitae turpis id tortor luctus mattis.</p>
+		</div>
+	</div>
+	<div class="popup" id="camera-dubla">
+		<div class="popup-background"></div>
+		<div class="popup-body">
+			<h3 class="popup-title main-heading">Camera dubla</h3>
+			<div class="slider">
+				<img src="css/images/camera-dubla.jpg" />
+			</div>
+			<p class="popup-text">Mauris ut turpis nulla. Pellentesque eu sem sit amet purus dignissim bibendum.<br/><br/>Vivamus urna lacus, ornare a faucibus et, luctus vel erat. Maecenas varius augue ac arcu semper, non scelerisque leo eleifend.<br/>Pellentesque rhoncus fringilla ligula, et finibus libero efficitur nec. Duis vitae turpis id tortor luctus mattis.</p>
+		</div>
+	</div>-->
+	
+	<script src="scripts/underscore.js"></script>
+	<script src="scripts/as.js"></script>
+	<script src="scripts/jquery-1.10.2.min.js"></script>
+	<script src="scripts/utils.js"></script>
+	<script src="scripts/accordion.js"></script>
+	<script src="scripts/main.js"></script>
+	<script src="scripts/sss.min.js"></script>
+
 	
 	<script>
 		$(function($) {
-			$(".room").on("click", function() {
-				$($(this).attr("data-popup")).addClass("is-active");
-			});
-			$(".popup-background").on("click", function() {
-				$(this).closest(".popup").removeClass("is-active");
-			})
-			$(".input-field, .textarea-field").on("change", function(e) {
-				if (!$(this)[0].validity.valid) {
-					$(this).closest(".form-item").addClass("validation-error");
-				} else {
-					$(this).closest(".form-item").removeClass("validation-error");
-				}
-			})
-			$('.slider').sss();
-			$(".global-navigation-item").on("click", function(e) {
-				e.preventDefault();
-				var target = $(this).attr("href");
-				$("html, body").animate({ scrollTop: $(target).offset().top - 50 }, 600);
-			})
+			$(".loader").addClass("is-done");
 		});
 	</script>
 </body>

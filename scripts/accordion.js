@@ -7,7 +7,7 @@ function (_, as, $) {
 	    events: {
 	    	"click .accordion-headline": "toggleAccordionText",
 	    	"keyup .accordion-headline": "toggleAccordionText",
-	        "resize window": "calculateHeight"
+	      "resize window": "calculateHeight"
 	    },
 	    createElement: function (el) {
 	      return el;
