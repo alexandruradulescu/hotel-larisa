@@ -1,0 +1,12 @@
+/* Accordion
+_________________________________*/
+.accordion { padding:0 2rem; outline:.1rem dotted #E0E0E0; margin-bottom:2rem; background-color:#fff; }
+.accordion.active { outline:.1rem dotted #DD2C00; }
+	.accordion-headline { font-size:2.4rem; line-height:1.2; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; padding:2rem 0; cursor:pointer; position:relative; box-sizing:border-box; color:#212121; will-change:color; transition:color .3s; }
+	.accordion-headline:focus { color:#DD2C00; outline:none; }
+	.accordion.active .accordion-headline { color:#DD2C00; }
+		.accordion-headline:before { content:""; display:block; height:1.6rem; width:.2rem; position:absolute; top:0; bottom:0; margin:auto; right:1.7rem; background-color:#212121; will-change:opacity; transition:opacity .2s; }
+		.accordion-headline:after { content:""; display:block; width:1.6rem; height:.2rem; position:absolute; top:0; bottom:0; margin:auto; right:1rem; background-color:#212121; }
+		.accordion.active .accordion-headline:before { opacity:0; }
+	.accordion-content { max-height:0; overflow:hidden; will-change:max-height; -webkit-transition:max-height .25s ; -moz-transition:max-height .25s ; -o-transition:max-height .25s ; -ms-transition:max-height .25s ; transition:max-height .25s ; }
+		.accordion-inner { overflow:hidden; }

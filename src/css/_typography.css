@@ -1,0 +1,10 @@
+/* TYPOGRAPHY
+_________________________________*/
+.main-heading { font-size:3.2rem; color:#414141; font-weight:500; line-height:1.4; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; margin:.8rem 0 3.2rem; text-align:center; }
+.secondary-heading { font-size:1.8rem; color:#414141; line-height:1.4; margin:.8rem 0 3.6rem; text-align:center; }
+.secondary-heading.text-align-left { text-align:left; }
+.main-heading + .secondary-heading { margin-top:-2.4rem; }
+.main-heading.align-left,
+.secondary-heading.align-left { text-align:left; }
+.heading-third { font-size:2.4rem; font-size:2.4rem; line-height:1.2; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; margin-bottom:1.6rem; color:#212121; }
+.text-default { font-size:1.6rem; line-height:1.2; margin-bottom:.8rem; color:#424242;  }

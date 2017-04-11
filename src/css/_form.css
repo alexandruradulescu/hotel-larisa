@@ -1,0 +1,38 @@
+﻿/* FORM ELEMENTS
+____________________________________*/
+.form-item { display:block; margin-bottom:2em; }
+	.input-label { font-size:1.2em; display:block; color:#000; text-transform:uppercase; margin-bottom:.5em; }
+	.mandatory-field .input-label:after,
+	.input-field[required] ~ .input-label:after { content:"*"; margin-left:.4rem; }
+	.input-field,
+	.textarea-field { font-size:1.4rem; width:100%; height:4.8rem; background-color:#fff; display:block; line-height:1.2; border:1px dotted #9E9E9E; padding:1.6rem; box-sizing:border-box; outline:none; }
+	.textarea-field { line-height:1.2; height:9.6rem; resize:none; }
+	.input-field:focus,
+	.textarea-field:focus { outline:none; border-color:#000; }
+	.checkbox-field { display:block; float:left;  }
+	.checkbox-field + .input-label { display:block; position:relative; top:.3em; }
+	.error-message { margin-top:.4rem; font-size:1.2rem; color:#c62828; display:none; }
+	.input-field:valid,
+	.textarea-field:valid { border-color:#388E3C; }
+	.validation-error .input-field,
+	.validation-error .textarea-field:invalid { border-color:#c62828; }
+	.validation-error .error-message { display:block; }
+
+	.button { font-size:1.4em; display:block; font-weight:bold; padding:1em .714em; line-height:1.2; position:relative; color:#fff; background-color:#268c60; border:none; cursor:pointer; box-sizing:border-box; -webkit-transition:background-color .25s; -moz-transition:background-color .25s; transition:background-color .25s; }
+	.button:hover,
+	.button:focus { background-color:#136E47; }
+	.button-transparent { background-color:transparent; color:#268c60; padding-left:1.428em; font-weight:bold; }
+	.button.is-large { font-weight:500; padding:1em; font-size:1.6em; }
+	.button.is-inline { display:inline-block; }
+
+	.button.golden { background-color:#FFA000; color:#000; transition:background-color .2s; }
+	.button.golden:hover { background-color:#FF8F00; }
+
+	.submit-button { width:100%; }
+	.fancy-button,
+	.fancy-button:hover,
+	.fancy-button:focus { color:#212121; background-color:transparent; outline:none; border-top:.1rem dotted #212121; border-bottom:.1rem dotted #212121; padding:0.8rem 2.4rem; margin:auto; }
+
+@media all and (max-width:540px) {
+	.textarea-field { height:13.8rem; }
+}

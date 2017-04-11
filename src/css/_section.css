@@ -1,0 +1,10 @@
+﻿/* SECTION
+_________________________________*/
+.main-wrapper { min-height:calc(100% - 7.8rem); }
+.section { margin:7rem 0; position:relative; }
+.section.connect-up { margin-top:0; }
+.section.connect-bottom { margin-bottom:0; }
+
+@media all and (max-width:768px) {
+	.section { margin:4rem 0; }
+}

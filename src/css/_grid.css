@@ -1,0 +1,42 @@
+﻿/* DEFAULT CONTAINER --> edit widths as needed
+____________________________________*/
+.box-wide { width:92%; max-width:120rem; margin:auto; min-width:30rem; }
+.box-narrow { width:92%; max-width:110rem; margin:auto; min-width:30rem; }
+.box-tiny { width:50%; max-width:60rem; min-width:30rem; margin:auto; }
+
+
+/* GRID --> edit gutter as needed
+____________________________________*/
+.box-full { width:100%; float:left; box-sizing:border-box; }
+.box-half { width:50%; float:left; box-sizing:border-box; }
+.box-third { width:33.333%; float:left; box-sizing:border-box; }
+.box-two-thirds { width:66.66%; float:left; box-sizing:border-box; }
+.box-quarter { width:25%; float:left; box-sizing:border-box; }
+.box-three-quarters { width:75%; float:left; box-sizing:border-box; }
+.column-grid { width:calc(100% + 2rem); margin-left:-1rem; margin-right:-1rem; }
+	.column-grid > .box-quarter { width:calc(25% - 2rem); margin-left:1rem; margin-right:1rem; }
+	.column-grid > .box-third { width:calc(33.333% - 2rem); margin-left:1rem; margin-right:1rem; }
+	.column-grid > .box-two-thirds { width:calc(66.66% - 2rem); margin-left:1rem; margin-right:1rem; }
+	.column-grid > .box-full { width:calc(100% - 2rem); margin-left:1rem; margin-right:1rem; }
+	.column-grid > .box-half { width:calc(50% - 2rem); margin-left:1rem; margin-right:1rem; position:relative; }
+	.column-grid > .box-three-quarters { width:calc(75% - 2rem); margin-left:1rem; margin-right:1rem; }
+@media all and (max-width:768px) {
+	.box-third,
+	.box-quarter { width:50%; }
+	.box-two-thirds,
+	.box-three-quarters { width:100%; }
+	.column-grid > .box-third,
+	.column-grid > .box-quarter { width:calc(50% - 2rem); }
+	.column-grid > .box-two-thirds,
+	.column-grid > .box-three-quarters { width:calc(100% - 2rem); }
+}
+@media all and (max-width:540px) {
+	.box-narrow { width:90%; min-width:initial; }
+
+	.box-third,
+	.box-quarter,
+	.box-half  { width:100%; }
+	.column-grid > .box-third,
+	.column-grid > .box-quarter,
+	.column-grid > .box-half  { width:calc(100% - 2rem); }
+}

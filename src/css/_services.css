@@ -1,0 +1,12 @@
+/* Services
+_________________________________*/
+.service { margin-bottom:4rem; }
+.service:nth-child(3n+1) { clear:both; }
+    .service-image { display:block; max-width:100%; margin:auto; }
+    .service-title { font-size:2.4rem; line-height:1.4; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; margin:1.6rem 0 .8rem; text-align:center; color:#E65100; }
+    .service-text { font-size:1.4rem; line-height:1.4; color:#969696; text-align:center; }
+
+@media all and (max-width:768px) {
+    .service:nth-child(3n+1) { clear:none; }
+    .service:nth-child(2n+1) { clear:both; }
+}

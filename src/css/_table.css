@@ -1,0 +1,10 @@
+﻿/* TABLE
+____________________________________*/
+.table { display:table; border-spacing:0; border-collapse:collapse; width:100%; }
+    .table-row { display:table-row; }
+        .table-cell { display:table-cell; padding:1.6rem 2.4rem 1.6rem 0; border-bottom: .1rem solid #e0e0e0; font-size:1.4rem; color:#212121; vertical-align:middle; color:#464646; }
+        .table-row:last-child .table-cell { border-bottom:none; }
+
+@media all and (max-width:540px) {
+    .table-cell { padding:1.2rem 1.6rem 1.2rem 0; }
+}

@@ -1,0 +1,22 @@
+.room { cursor:pointer; background-color:#fff; outline:.1rem dotted #E0E0E0; margin-bottom:2rem; transition:transform .25s, outline-color .25s; }
+.room:focus { transform:scale(1.05); outline-color:#646464 }
+    .room-figure { width:100%; padding-top:100%; position:relative; overflow:hidden; background-size:cover; background-position:50% 50%; background-repeat:none; }
+    .room-content { padding:1.6rem; }   
+        .room-name { font-size:2.4rem; line-height:1.2; font-family:'Alegreya Sans SC', helvetica, arial, sans-serif; margin-bottom:.8rem; }
+        .room-name.main-heading { text-align:left; margin-bottom:.8rem; line-height:1; }
+        .room-info { font-size:1.4rem; line-height:1.4; color:#ccc; margin-bottom:2.4rem; }
+
+.room-details { padding:0 1.6rem 1.6rem 1.6rem; overflow:hidden; }
+
+@media all and (min-width:1025px) {
+    .room:hover { transform:scale(1.05); outline-color:#646464 }
+    .room-name.main-heading { margin-top:0; }
+
+    .room-details { padding:2.4rem; }
+}
+
+@media all and (min-width:541px) and (max-width:1024px) {
+    .room.box-quarter { width:calc(50% - 2rem); }
+    .room.box-quarter:nth-child(2n+1) { clear:left;; }
+}
+

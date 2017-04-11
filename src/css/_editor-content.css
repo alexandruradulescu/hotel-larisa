@@ -1,0 +1,11 @@
+﻿.editor-content { margin-bottom:3rem; }
+	.editor-content p { font-size:1.6rem; line-height:1.4; margin-bottom:1em; }
+	.editor-content strong, .editor-content b { font-weight:bold; }
+	.editor-content em, .editor-content i { font-style:italic; }
+	.editor-content a { color: #0000ff; text-decoration:underline; }
+	.editor-content img { max-width:100%; margin-bottom:1rem; }
+
+	.editor-content ul, .editor-content ol { font-size:1.6rem; padding-left:1.25em; margin-bottom:1em; line-height:1.4; list-style-type:disc; }
+	.editor-content ul li, .editor-content ol li { margin-bottom:.8rem; }
+	.editor-content ol { list-style-type:decimal; }
+	.editor-content > :last-child { margin-bottom:0; }
